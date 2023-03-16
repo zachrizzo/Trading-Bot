@@ -1,0 +1,37 @@
+* {
+    background-color: #ffffff;
+    text-align: center;
+    color: 'white';
+
+}
+
+.mainButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    /* on mouse hover scale .4 */
+    transition: transform .4s;
+
+
+
+}
+
+.chart {
+    background-color: #d7d7d7;
+    color: 'white';
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    width: 1000px;
+    height: 500px;
+    border-radius: 30px;
+
+}
