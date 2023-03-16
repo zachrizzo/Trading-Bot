@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Trading Bot</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'css/style.css' %}"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <script>
+      function buttonClick() {
+        alert("Hello World");
+      }
+      // console.log("Hello World");
+    </script>
+
+    <h1>Trading Bot</h1>
+    <p>Current price: {{ price }}</p>
+    <button class="mainButton" onclick="buttonClick()">Click</button>
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+    <!-- script tag for on click -->
+    <div>
+      <canvas class="chart" id="myChart"></canvas>
+    </div>
+    <script src="path/to/chartjs/dist/chart.umd.js"></script>
+    <script>
+      const ctx = document.getElementById("myChart");
+      chart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      chart.update();
+    </script>
+  </body>
+</html>

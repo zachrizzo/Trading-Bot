@@ -35,36 +35,3 @@ for i in range(0, 10):
 
     print(crypto_data)
 
-# df_spy = pd.DataFrame({
-
-#     'price': [spy_data.p],
-#     'timestamp': [spy_data.t]
-# })
-
-# print(df_spy)
-
-
-
-# wss_client = StockDataStream(API_KEY, SECRET_KEY ,raw_data=True) #url_override="wss://stream.data.markets/v2/iex")
-# trading_client = TradingClient(API_KEY, SECRET_KEY, paper=True)
-# historical_data_client = StockHistoricalDataClient(API_KEY, SECRET_KEY)
-
-
-
-# # Getting account information and printing it
-# account = trading_client.get_account()
-# for property_name, value in account:
-#   print(f"\"{property_name}\": {value}")
-
-
-
-
-# #url_override="wss://stream.data.markets/v2/iex"
-# async def quote_data_handler(data):
-#     time.sleep(3)
-
-#     print(data)
-
-# wss_client.subscribe_bars(quote_data_handler, "AAPL")
-
-# wss_client.run()
